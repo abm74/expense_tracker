@@ -9,14 +9,15 @@ class ExpensesItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               expense.title,
-              // textAlign: TextAlign.left,
-              style: const TextStyle(fontSize: 24),
+              // textAlign: TextAlign.center,
+              // style: const TextStyle(fontSize: 24),
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             Row(
               children: [
