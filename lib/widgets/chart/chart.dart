@@ -35,7 +35,7 @@ class Chart extends StatelessWidget {
     final bool isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Container(
-      // height: MediaQuery.of(context).size.height,
+      height: MediaQuery.of(context).size.height,
       // width: MediaQuery.of(context).size.width,
         // constraints: const BoxConstraints(minHeight: 200),
       decoration: BoxDecoration(

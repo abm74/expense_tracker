@@ -20,7 +20,7 @@ class _ExpensesState extends State<Expenses> {
         category: Category.work,
         date: DateTime.now()),
     Expense(
-        title: 'Cheese',
+        title: 'Dinner',
         amount: 15.10,
         category: Category.food,
         date: DateTime.now()),
@@ -32,15 +32,15 @@ class _ExpensesState extends State<Expenses> {
   ];
   void _showBottomSheet() {
     showModalBottomSheet(
-        constraints:const BoxConstraints.expand(),
-        //  BoxConstraints(minWidth: MediaQuery.of(context).size.width),
+        constraints: const BoxConstraints.expand(),
+        // constraints:  BoxConstraints(minWidth: MediaQuery.of(context).size.width-100),
         isScrollControlled: true,
         useSafeArea: true,
         showDragHandle: true,
         // elevation: 650,
         context: context,
-        builder: (ctx) =>NewExpense(_addNewExpense),
-        //  SizedBox(
+        builder: (ctx) => NewExpense(_addNewExpense),
+        // SizedBox(
             //   // width: double.infinity,
             //   // height: double.infinity,
             //   child: Padding(
@@ -90,6 +90,7 @@ class _ExpensesState extends State<Expenses> {
     }
     return Scaffold(
       appBar: AppBar(
+        // centerTitle: true,
         title: const Text(
           'Expense Tracker',
           // style: Theme.of(context).textTheme.titleLarge,
@@ -98,7 +99,7 @@ class _ExpensesState extends State<Expenses> {
           IconButton(onPressed: _showBottomSheet, icon: const Icon(Icons.add))
         ],
       ),
-      body: width < 600
+      body: width < 550
           ? Column(
               // mainAxisSize: MainAxisSize.min,
               children: [

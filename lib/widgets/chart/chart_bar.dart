@@ -10,14 +10,14 @@ class ChartBar extends StatelessWidget {
     return FractionallySizedBox(
       alignment: Alignment.bottomCenter,
       heightFactor: fill,
-      // widthFactor: 0.1,
+      widthFactor: 0.9,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
           color: Theme.of(context).colorScheme.primary,
         ),
         // constraints: const BoxConstraints(minWidth: 30, maxWidth: 70),
-        width: 75,
+        // width: 75,
       ),
     );
     
