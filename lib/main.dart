@@ -9,9 +9,8 @@ void main() {
   runApp(const MainApp());
 }
 
-var kColorScheme = ColorScheme.fromSeed(
-  seedColor:const Color.fromARGB(255, 220, 7, 220)
-);
+var kColorScheme =
+    ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 220, 7, 220));
 // seedColor: Color.fromARGB(238, 2, 252, 40));
 var kDarkColorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,

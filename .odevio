@@ -1,0 +1,5 @@
+build-type=configuration
+flutter=3.16.5
+mode=release
+target=lib/main.dart
+tunnel-host=localhost
